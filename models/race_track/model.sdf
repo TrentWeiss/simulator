@@ -2,30 +2,35 @@
 
 <sdf version='1.4'>
 
-  <model name="porto_track">
+    <model name="porto_track">
+      
+      <pose> -145.868000 -280.893000 0.0  0.0 0.0 0.0 </pose>
 
-    <link name="race_track">
+      <link name="race_track">
 
-      <!-- <collision name="collision">
-        <geometry>
-          <mesh>
-            <uri>file://meshes/race_track/race_track.stl</uri>
-          </mesh>
-        </geometry>
-      </collision> -->
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file://meshes/race_track/race_track.stl</uri>
+              <!-- <uri>file://meshes/race_track/race_track_inches.stl</uri> -->
+            </mesh>
+          </geometry>
+        </collision>
 
-      <visual name="visual">
-        <geometry>
-          <mesh>
-            <uri>file://meshes/race_track/race_track.stl</uri>
-          </mesh>
-        </geometry>
-      </visual>
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file://meshes/race_track/race_track.stl</uri>
+              <!-- <uri>file://meshes/race_track/race_track_inches.stl</uri> -->
+            </mesh>
+          </geometry>
+        </visual>
 
-    </link>
+      </link>
 
-    <static>1</static>
+      <static>1</static>
+    
+    </model>
 
-  </model>
 
 </sdf>
