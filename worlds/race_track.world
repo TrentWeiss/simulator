@@ -15,7 +15,7 @@
     </light>
     <model name='ground_plane'>
       <static>1</static>
-      <link name='link'>
+      <link name='race_track'>
         <collision name='collision'>
           <geometry>
             <plane>
@@ -83,7 +83,7 @@
     </spherical_coordinates>
     <model name='asphalt_plane'>
       <static>1</static>
-      <link name='link'>
+      <link name='race_track'>
         <collision name='collision'>
           <geometry>
             <box>

@@ -4,20 +4,20 @@
 
   <model name="porto_track">
 
-    <link name="link">
+    <link name="race_track">
 
-      <collision name="collision">
+      <!-- <collision name="collision">
         <geometry>
           <mesh>
-            <uri>model://f1tenth-sim/world/race_track/race_track.stl</uri>
+            <uri>file://meshes/race_track/race_track.stl</uri>
           </mesh>
         </geometry>
-      </collision>
+      </collision> -->
 
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://f1tenth-sim/world/race_track/race_track.stl</uri>
+            <uri>file://meshes/race_track/race_track.stl</uri>
           </mesh>
         </geometry>
       </visual>
