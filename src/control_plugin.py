@@ -178,6 +178,6 @@ if __name__ == '__main__':
 
         rospy.spin()
 
-    except rospy.ROSInterruptException:
+    except rospy.ROSInterruptException as ex:
 
         pass

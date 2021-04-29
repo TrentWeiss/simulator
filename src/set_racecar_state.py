@@ -46,8 +46,8 @@ def racecar_reset_state():
         set_state = rospy.ServiceProxy('/gazebo/set_model_state', SetModelState)
         resp = set_state(state_msg)
 
-    except rospy.ServiceException, error_msg:
-        print("Service call failed: %s" % error_msg)
+    except rospy.ServiceException as ex:
+        print("Service call failed: %s" % str(ex))
 
 if __name__ == '__main__':
     try:

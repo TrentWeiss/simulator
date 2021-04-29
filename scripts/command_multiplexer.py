@@ -66,5 +66,5 @@ if __name__ == '__main__':
             rospy.Subscriber('/{}/offboard/command'.format(car_name), AckermannDrive, offboard_callback)
         rospy.Subscriber('/{}/joy'.format(car_name), Joy, joy_command_callback)
         rospy.spin()
-    except rospy.ROSInterruptException:
+    except rospy.ROSInterruptException as ex:
         pass
